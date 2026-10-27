@@ -1,7 +1,7 @@
 gpn = ["ruf", "niv"]
 with open("new_sample_ID", 'r') as R:
     grp = {line.split('\t')[0]: line.split('\t')[1].rstrip('\n') for line in R}
-with open('H1_H2_sample_D17_10k.snp.vcf', 'r') as R, open('H1_H2_sample_D17_10k.fas', 'w+') as W:
+with open('sample.vcf', 'r') as R, open('sample.fas', 'w+') as W:
     headline = ""
     tsam = []
     sam = []
